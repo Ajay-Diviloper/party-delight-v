@@ -1,0 +1,182 @@
+// src/lib/products-data.ts
+import { Product } from './types';
+
+export const productsData: Product[] = [
+  // Swirls
+  { id: 1, name: 'Cheesy Halepeno Swirls', image: '/images/products-category-images/cheesy-halepeno-swirls.webp', slug: 'cheesy-halepeno-swirls', description: 'Hand-rolled pastry with seasoned halepenos and cheese.', category: 'Swirls', keywords: 'swirls, halepeno, cheese, savoury', isFeatured: false },
+  // Danish Pastries
+  { id: 2, name: 'Labneh Zaatar', image: '/images/products-category-images/labneh-zaatar.webp', slug: 'labneh-zaatar', description: 'Creamy labneh, Canadian honey, and Mediterranean zaatar.', category: 'Danish Pastries', keywords: 'danish, labneh, zaatar, honey, mediterranean', isFeatured: false },
+  { id: 3, name: 'Bruschetta', image: '/images/products-category-images/bruschetta.webp', slug: 'bruschetta', description: 'Cherry tomatoes, basil, olive oil, and cheese.', category: 'Danish Pastries', keywords: 'danish, bruschetta, tomato, basil, cheese, italian', isFeatured: false },
+  { id: 4, name: 'Mushroom and Brie', image: '/images/products-category-images/mushroom-brie.webp', slug: 'mushroom-and-brie', description: 'Sautéed mushrooms with creamy Brie cheese.', category: 'Danish Pastries', keywords: 'danish, mushroom, brie, german', isFeatured: false },
+  { id: 5, name: 'Pesto Chicken', image: '/images/products-category-images/pesto-chicken.webp', slug: 'pesto-chicken', description: 'Chicken marinated with aromatic Italian pesto.', category: 'Danish Pastries', keywords: 'danish, chicken, pesto, italian', isFeatured: false },
+  // Strudels
+  { id: 6, name: 'Dynamite Strudel', image: '/images/products-category-images/dynamite-strudel.webp', slug: 'dynamite-strudel', description: 'Chicken in dynamite sauce baked in puff pastry.', category: 'Strudels', keywords: 'strudel, chicken, dynamite, puff pastry', isFeatured: false },
+  // Puffs & Rolls
+  { id: 7, name: 'Chicken Puffs', image: '/images/products-category-images/chicken-puffs.webp', slug: 'chicken-puffs', description: 'Chicken-filled pockets.', category: 'Puffs & Rolls', keywords: 'puffs, chicken, pastry', isFeatured: false },
+  { id: 8, name: 'Chicken Rolls', image: '/images/products-category-images/chicken-sausage-rolls.webp', slug: 'rolli-polli', description: 'Chicken sausage rolls.', category: 'Puffs & Rolls', keywords: 'rolls, chicken, sausage, pastry', isFeatured: false },
+  // Quiche
+  { id: 9, name: 'Mushy Delight', image: '/images/products-category-images/mushy-delight.webp', slug: 'mushy-delight', description: 'Mushrooms, garlic, olives, tomatoes, herbs (Vegetarian).', category: 'Quiche', keywords: 'quiche, mushroom, garlic, olives, vegetarian', isFeatured: false },
+  { id: 10, name: 'Cheesy Delight', image: '/images/products-category-images/cheesy-delight.webp', slug: 'cheesy-delight', description: 'Broccoli, Cheddar, spinach, and sweet corn.', category: 'Quiche', keywords: 'quiche, broccoli, cheddar, spinach, corn', isFeatured: false },
+  { id: 11, name: 'Chicky Delight', image: '/images/products-category-images/chicky-delight.webp', slug: 'chicky-delight', description: 'Chicken, capsicum, and basil.', category: 'Quiche', keywords: 'quiche, chicken, capsicum, basil', isFeatured: false },
+  // Croissants
+  { id: 12, name: 'Chicken Mayo Croissant', image: '/images/products-category-images/chicken-croissant.webp', slug: 'chicken-mayo-croissant', description: 'Chicken mayo, lettuce, spices.', category: 'Croissants', keywords: 'croissant, chicken, mayo, lettuce, spices', isFeatured: false },
+  { id: 13, name: 'Cheese & Veggie Croissant', image: '/images/products-category-images/veggie-croissant.webp', slug: 'cheese-veggie-croissant', description: 'Cheese, cucumber, red peppers, spices.', category: 'Croissants', keywords: 'croissant, cheese, cucumber, red peppers, spices', isFeatured: false },
+  { id: 14, name: 'Tuna Croissant', image: '/images/products-category-images/tuna-croissant.webp', slug: 'tuna-croissant', description: 'Tuna, parsley, lettuce, jalapeños.', category: 'Croissants', keywords: 'croissant, tuna, parsley, lettuce, jalapenos', isFeatured: false },
+  { id: 15, name: 'Croishouka', image: '/images/products-category-images/eggs-croissant.webp', slug: 'croishouka', description: 'Eggs, sumac, tomatoes.', category: 'Croissants', keywords: 'croissant, eggs, sumac, tomatoes', isFeatured: false },
+  // Sandwiches
+  { id: 16, name: 'Chicken Sandwich', image: '/images/products-category-images/chicken-sandwich.webp', slug: 'chicken-sandwich', description: 'Garlic butter, chicken, chili mayo, herbs, caramelized onions, spinach.', category: 'Sandwiches', keywords: 'sandwich, chicken, garlic butter, chili mayo, herbs, onions, spinach', isFeatured: false },
+  { id: 17, name: 'Salmon Sandwich', image: '/images/products-category-images/salmon-sandwich.webp', slug: 'salmon-sandwich', description: 'Salmon, pesto, pickled cucumbers, arugula, honey mustard.', category: 'Sandwiches', keywords: 'sandwich, salmon, pesto, cucumbers, arugula, honey mustard', isFeatured: false },
+  { id: 18, name: 'Vegetarian Sandwich', image: '/images/products-category-images/vegetarian-sandwich.webp', slug: 'vegetarian-sandwich', description: 'Focaccia, muhammara, vegan cheese, radish, spices.', category: 'Sandwiches', keywords: 'sandwich, vegetarian, focaccia, muhammara, vegan cheese, radish, spices', isFeatured: false },
+  { id: 19, name: 'Grilled Cheese Sandwich', image: '/images/products-category-images/grilled-cheese.webp', slug: 'grilled-cheese-sandwich', description: 'Apple, sun-dried tomato, mozzarella, cheddar.', category: 'Sandwiches', keywords: 'sandwich, grilled cheese, apple, sun-dried tomato, mozzarella, cheddar', isFeatured: false },
+  // Wraps
+  { id: 20, name: 'Chicken Wrap', image: '/images/products-category-images/chicken-wrap.webp', slug: 'chicken-wrap', description: 'Chicken, garlic butter, chili mayo, herbs, onions, spinach.', category: 'Wraps', keywords: 'wrap, chicken, garlic butter, chili mayo, herbs, onions, spinach', isFeatured: false },
+  { id: 21, name: 'Vegan Wrap', image: '/images/products-category-images/vegan-wrap.webp', slug: 'vegan-wrap', description: 'Muhammara, vegan cheese, radishes, spices.', category: 'Wraps', keywords: 'wrap, vegan, muhammara, vegan cheese, radishes, spices', isFeatured: false },
+  { id: 22, name: 'Paneer Wrap', image: '/images/products-category-images/paneer-wrap.webp', slug: 'paneer-wrap', description: 'Schezwan-paneer, peppers, onions, tamarind.', category: 'Wraps', keywords: 'wrap, paneer, schezwan, peppers, onions, tamarind', isFeatured: false },
+  // Waffles
+  { id: 23, name: 'Chicken Nacho Waffles', image: '/images/products-category-images/crayzee-croffle-croissant-waffle-topped-with-cream-bananas-strawberries.webp', slug: 'chicken-nacho-waffles', description: 'Chicken popcorn, cheesy nachos, cheese sauce, guacamole.', category: 'Waffles', keywords: 'waffles, chicken, nachos, cheese sauce, guacamole', isFeatured: false },
+  // Mac n’ Cheese
+  { id: 24, name: 'Classic Mac n’ Cheese', image: '/images/products-category-images/cheese-and-nuts-cracker.webp', slug: 'classic-mac-n-cheese', description: 'Cheesy macaroni with garlic bread.', category: 'Mac n’ Cheese', keywords: 'mac n cheese, macaroni, cheese, garlic bread', isFeatured: false },
+  // Sides
+  { id: 25, name: 'Crispy Potato Wedges', image: '/images/products-category-images/crispy-potato-wedges.webp', slug: 'crispy-potato-wedges', description: 'Perfect for dipping and sharing.', category: 'Sides', keywords: 'sides, potato, wedges, crispy', isFeatured: false },
+  { id: 26, name: 'French Air Fries', image: '/images/products-category-images/french-air-rries.webp', slug: 'french-air-fries', description: 'Golden, crispy fries.', category: 'Sides', keywords: 'sides, fries, french, crispy', isFeatured: false },
+  { id: 27, name: 'Spicy Nachos', image: '/images/products-category-images/spicy-nachos.webp', slug: 'spicy-nachos', description: 'With salsa and cheese sauce.', category: 'Sides', keywords: 'sides, nachos, spicy, salsa, cheese sauce', isFeatured: false },
+  { id: 28, name: 'Green Salad', image: '/images/products-category-images/green-salad.webp', slug: 'green-salad', description: 'Fresh and vibrant.', category: 'Sides', keywords: 'sides, salad, green, fresh', isFeatured: false },
+  // Cakes
+  { id: 29, name: 'Chantilly', image: '/images/products-category-images/chantilly.webp', slug: 'chantilly', description: 'Vanilla sponge with berries and whipped cream.', category: 'Cakes', keywords: 'cake, chantilly, vanilla, berries, whipped cream', isFeatured: false },
+  { id: 30, name: 'Zesty Lemon Delight', image: '/images/products-category-images/zesty-lemon-delight.webp', slug: 'zesty-lemon-delight', description: 'Vanilla lemon cake with lemon curd and Swiss meringue.', category: 'Cakes', keywords: 'cake, lemon, vanilla, curd, meringue', isFeatured: false },
+  { id: 31, name: 'Day and Night', image: '/images/products-category-images/day-and-night.webp', slug: 'day-and-night', description: 'Vanilla chocolate cake with fudge and chocolate buttercream.', category: 'Cakes', keywords: 'cake, chocolate, vanilla, fudge, buttercream', isFeatured: false },
+  { id: 32, name: 'Not So Earl Grey', image: '/images/products-category-images/not-so-earl-grey.webp', slug: 'not-so-earl-grey', description: 'Earl Grey vanilla cake with ganache.', category: 'Cakes', keywords: 'cake, earl grey, vanilla, ganache', isFeatured: false },
+  { id: 33, name: 'Mango Sunshine', image: '/images/products-category-images/mango-sunshine.webp', slug: 'mango-sunshine', description: 'Coconut mango cake with fresh mango and toasted coconut.', category: 'Cakes', keywords: 'cake, mango, coconut, toasted', isFeatured: false },
+  { id: 34, name: 'Midnight Temptation', image: '/images/products-category-images/double-chocolate-cake.webp', slug: 'midnight-temptation', description: 'Double chocolate cake with fudge and mirror glaze.', category: 'Cakes', keywords: 'cake, chocolate, fudge, mirror glaze', isFeatured: false },
+  { id: 35, name: 'Coffee Delight', image: '/images/products-category-images/coffee-buttercream-cake.webp', slug: 'coffee-delight', description: 'Coffee buttercream and soaked chocolate sponge.', category: 'Cakes', keywords: 'cake, coffee, buttercream, chocolate', isFeatured: false },
+  { id: 36, name: 'Dulce de Leche', image: '/images/products-category-images/dulce-de-leche.webp', slug: 'dulce-de-leche', description: 'Chocolate sponge, caramel drizzle, and caramel buttercream.', category: 'Cakes', keywords: 'cake, dulce de leche, caramel, chocolate, buttercream', isFeatured: false },
+  { id: 37, name: 'Minty Mischief', image: '/images/products-category-images/minty-mischief.webp', slug: 'minty-mischief', description: 'Chocolate sponge with mint buttercream and ganache.', category: 'Cakes', keywords: 'cake, mint, chocolate, buttercream, ganache', isFeatured: false },
+  { id: 38, name: 'Cookie Monster', image: '/images/products-category-images/cookie-monster.webp', slug: 'cookie-monster', description: 'Cookies & cream chocolate sponge.', category: 'Cakes', keywords: 'cake, cookie, cream, chocolate', isFeatured: false },
+  { id: 39, name: 'Peanut Butter Bliss', image: '/images/products-category-images/peanut-butter-bliss.webp', slug: 'peanut-butter-bliss', description: 'Chocolate sponge with peanut butter frosting.', category: 'Cakes', keywords: 'cake, peanut butter, chocolate, frosting', isFeatured: false },
+  { id: 40, name: 'Lady in Red (Red Velvet)', image: '/images/products-category-images/lady-in-red.webp', slug: 'lady-in-red-red-velvet', description: 'Classic Red Velvet with cream cheese buttercream.', category: 'Cakes', keywords: 'cake, red velvet, cream cheese, buttercream', isFeatured: false },
+  { id: 41, name: 'Funfetti', image: '/images/products-category-images/funfetti.webp', slug: 'funfetti', description: 'Vanilla sponge with sprinkles.', category: 'Cakes', keywords: 'cake, funfetti, vanilla, sprinkles', isFeatured: false },
+  { id: 42, name: 'Carrot Cake', image: '/images/products-category-images/carrot-cake.webp', slug: 'carrot-cake', description: 'With walnuts and cream cheese frosting.', category: 'Cakes', keywords: 'cake, carrot, walnut, cream cheese, frosting', isFeatured: false },
+  { id: 43, name: 'Morning Glory', image: '/images/products-category-images/morning-glory.webp', slug: 'morning-glory', description: 'Muffin with cream cheese.', category: 'Muffins', keywords: 'muffin, cream cheese', isFeatured: false },
+  { id: 44, name: 'Lemon Blueberry Muffin', image: '/images/products-category-images/lemon-blueberry.webp', slug: 'lemon-blueberry-muffin', description: 'Muffin with streusel topping.', category: 'Muffins', keywords: 'muffin, lemon, blueberry, streusel', isFeatured: false },
+  { id: 45, name: 'Banana-Chocolate-Walnut Muffin', image: '/images/products-category-images/banana-choco-walnut-choco-chip-berry-streusel-muffin.webp', slug: 'banana-chocolate-walnut-muffin', description: 'Moist banana muffin with chocolate and walnuts.', category: 'Muffins', keywords: 'muffin, banana, chocolate, walnut', isFeatured: false },
+  { id: 46, name: 'Choco Chip Muffin', image: '/images/products-category-images/banana-choco-walnut-choco-chip-berry-streusel-muffin.webp', slug: 'choco-chip-muffin', description: 'Classic chocolate chip muffin.', category: 'Muffins', keywords: 'muffin, chocolate chip', isFeatured: false },
+  { id: 47, name: 'Berry Muffin', image: '/images/products-category-images/berries.webp', slug: 'berry-muffin', description: 'Muffin with berries and streusel.', category: 'Muffins', keywords: 'muffin, berries, streusel', isFeatured: false },
+
+  // Scones
+  { id: 48, name: 'Apple Cinnamon Pecan Scone', image: '/images/products-category-images/apple-cinnamon-pecan.webp', slug: 'apple-cinnamon-pecan-scone', description: 'Spiced scone with apple, cinnamon, and pecans.', category: 'Scones', keywords: 'scone, apple, cinnamon, pecan', isFeatured: false },
+  { id: 49, name: 'Apple Cheddar Chives Scone', image: '/images/products-category-images/apple-cheddar-with-chives-and-rosemary.webp', slug: 'apple-cheddar-chives-scone', description: 'Scone with apple, cheddar, chives, and rosemary.', category: 'Scones', keywords: 'scone, apple, cheddar, chives, rosemary', isFeatured: false },
+  { id: 50, name: 'Chocolate Orange Cranberry Scone', image: '/images/products-category-images/chocolate-orange-cranberry.webp', slug: 'chocolate-orange-cranberry-scone', description: 'Scone with chocolate, orange, and cranberries.', category: 'Scones', keywords: 'scone, chocolate, orange, cranberry', isFeatured: false },
+  { id: 51, name: 'Lemon Blueberry Scone', image: '/images/products-category-images/lemon-blueberry-2.webp', slug: 'lemon-blueberry-scone', description: 'Scone with lemon and blueberry.', category: 'Scones', keywords: 'scone, lemon, blueberry', isFeatured: false },
+  { id: 52, name: 'Apricot Walnut Scone', image: '/images/products-category-images/apricot-walnut.webp', slug: 'apricot-walnut-scone', description: 'Scone with apricot and walnuts.', category: 'Scones', keywords: 'scone, apricot, walnut', isFeatured: false },
+
+  // Tarts
+  { id: 53, name: 'Tangy Lemon Tart', image: '/images/products-category-images/lemon-meringue-tart.webp', slug: 'tangy-lemon-tart', description: 'Lemon tart with fluffy meringue.', category: 'Tarts', keywords: 'tart, lemon, meringue', isFeatured: false },
+  { id: 54, name: 'Fruit Tart', image: '/images/products-category-images/fruit-tart.webp', slug: 'fruit-tart', description: 'Tart with fresh fruit.', category: 'Tarts', keywords: 'tart, fruit', isFeatured: false },
+  { id: 55, name: 'Butter Tart', image: '/images/products-category-images/butter-tart.webp', slug: 'butter-tart', description: 'Rich buttery tart.', category: 'Tarts', keywords: 'tart, butter', isFeatured: false },
+  { id: 56, name: 'Peanut Butter Tart', image: '/images/products-category-images/peanut-butter-tart.webp', slug: 'peanut-butter-tart', description: 'Tart filled with peanut butter.', category: 'Tarts', keywords: 'tart, peanut butter', isFeatured: false },
+  { id: 57, name: 'Habibi Chocolate Tart', image: '/images/products-category-images/habibi-chocolate-tart.webp', slug: 'habibi-chocolate-tart', description: 'Chocolate tart with a rich flavor.', category: 'Tarts', keywords: 'tart, chocolate', isFeatured: false },
+
+  // Pies
+  { id: 58, name: 'Apple Pie', image: '/images/products-category-images/apple-pie.webp', slug: 'apple-pie', description: 'Classic apple pie.', category: 'Pies', keywords: 'pie, apple', isFeatured: false },
+  { id: 59, name: 'Cherry Pie', image: '/images/products-category-images/cherry-pie.webp', slug: 'cherry-pie', description: 'Classic cherry pie.', category: 'Pies', keywords: 'pie, cherry', isFeatured: false },
+  { id: 60, name: 'Chocolate Pecan Espresso Pie', image: '/images/products-category-images/chocolate-pecan-espresso-rich-and-indulgent.webp', slug: 'chocolate-pecan-espresso-pie', description: 'Decadent chocolate pecan pie with espresso notes.', category: 'Pies', keywords: 'pie, chocolate, pecan, espresso', isFeatured: false },
+  { id: 61, name: 'Seasonal Pumpkin Pie', image: '/images/products-category-images/category-pies-apple-cherry-pumpkin.webp', slug: 'seasonal-pumpkin-pie', description: 'Pumpkin pie available seasonally.', category: 'Pies', keywords: 'pie, pumpkin, seasonal', isFeatured: false },
+
+  // Bars
+  { id: 62, name: 'Dream Big Bar', image: '/images/products-category-images/dream-big-bar.webp', slug: 'dream-big-bar', description: 'Sweet and flavorful dessert bar.', category: 'Bars', keywords: 'bar, dessert, sweet', isFeatured: false },
+  { id: 63, name: 'Nanaimo Bar', image: '/images/products-category-images/nanaimobar.webp', slug: 'nanaimo-bar', description: 'Classic Canadian layered bar.', category: 'Bars', keywords: 'bar, nanaimo, canadian', isFeatured: false },
+  { id: 64, name: 'Lemon Lust', image: '/images/products-category-images/lemon-lust.webp', slug: 'lemon-lust', description: 'Tangy lemon-flavored bar.', category: 'Bars', keywords: 'bar, lemon', isFeatured: false },
+  { id: 65, name: 'The Yum Rum', image: '/images/products-category-images/dream-big-bar-nanaimo-bar-lemon-lust-yum-rum-victorious-dates-blonde-bee-sting.webp', slug: 'the-yum-rum', description: 'Rum-infused dessert bar.', category: 'Bars', keywords: 'bar, rum', isFeatured: false },
+  { id: 66, name: 'The Victorious Dates Bar', image: '/images/products-category-images/the-victorious-dates-bar.webp', slug: 'the-victorious-dates-bar', description: 'Date-filled dessert bar.', category: 'Bars', keywords: 'bar, dates', isFeatured: false },
+  { id: 67, name: 'Blonde Bee Sting', image: '/images/products-category-images/dream-big-bar-nanaimo-bar-lemon-lust-yum-rum-victorious-dates-blonde-bee-sting.webp', slug: 'blonde-bee-sting', description: 'Sweet blonde bar with a honey kick.', category: 'Bars', keywords: 'bar, honey, blonde', isFeatured: false },
+
+  // Brownies
+  { id: 68, name: 'Pe’ can Do It', image: '/images/products-category-images/pe-can-do-it-pecan-brownie.webp', slug: 'pe-can-do-it', description: 'Pecan brownie.', category: 'Brownies', keywords: 'brownie, pecan', isFeatured: false },
+  { id: 69, name: 'BC Bliss', image: '/images/products-category-images/bc-bliss-berries-and-cream-cheese.webp', slug: 'bc-bliss', description: 'Brownie with berries and cream cheese.', category: 'Brownies', keywords: 'brownie, berries, cream cheese', isFeatured: false },
+  { id: 70, name: 'Canadian Rockies', image: '/images/products-category-images/guiltfree-gf-and-vegan-choco-brownie.webp', slug: 'canadian-rockies', description: 'Classic Canadian-style brownie.', category: 'Brownies', keywords: 'brownie, canadian', isFeatured: false },
+  { id: 71, name: 'GuiltFree (Choco Brownie)', image: '/images/products-category-images/guiltFree-choco-brownie.webp', slug: 'guiltfree-choco-brownie', description: 'Gluten-free and vegan chocolate brownie.', category: 'Brownies', keywords: 'brownie, gluten-free, vegan, chocolate', isFeatured: false },
+
+  // Cookies
+  { id: 72, name: 'Chunkie Monkey', image: '/images/products-category-images/chunkie-monkey-choco-chunk.webp', slug: 'chunkie-monkey', description: 'Chocolate chunk cookie.', category: 'Cookies', keywords: 'cookie, chocolate chunk', isFeatured: false },
+  { id: 73, name: 'Chip and Dale', image: '/images/products-category-images/chip-and-dale-peanut-butter.webp', slug: 'chip-and-dale', description: 'Peanut butter cookie.', category: 'Cookies', keywords: 'cookie, peanut butter', isFeatured: false },
+  { id: 74, name: 'Cowboy', image: '/images/products-category-images/cowboy-oats-and-nuts.webp', slug: 'cowboy', description: 'Oats and nuts cookie.', category: 'Cookies', keywords: 'cookie, oats, nuts', isFeatured: false },
+  { id: 75, name: 'Lemon Crinkle', image: '/images/products-category-images/lemon-crinkle-canadian-crinkle.webp', slug: 'lemon-crinkle', description: 'Lemon-flavored cookie.', category: 'Cookies', keywords: 'cookie, lemon', isFeatured: false },
+  { id: 76, name: 'Canadian Crinkle', image: '/images/products-category-images/lemon-crinkle-canadian-crinkle.webp', slug: 'canadian-crinkle', description: 'Canadian-style cookie.', category: 'Cookies', keywords: 'cookie, canadian', isFeatured: false },
+  { id: 77, name: 'The Eclipse', image: '/images/products-category-images/choco-cgank.webp', slug: 'the-eclipse', description: 'Dark chocolate delight cookie.', category: 'Cookies', keywords: 'cookie, dark chocolate', isFeatured: false },
+  { id: 78, name: 'Mud Slide', image: '/images/products-category-images/oreo-cheesecake-mud-slide-double-chocolate.webp', slug: 'mud-slide', description: 'Double chocolate cookie.', category: 'Cookies', keywords: 'cookie, double chocolate', isFeatured: false },
+  { id: 79, name: 'Sinless', image: '/images/products-category-images/sinless-almond-gf.webp', slug: 'sinless', description: 'Almond cookie, gluten-free.', category: 'Cookies', keywords: 'cookie, almond, gluten-free', isFeatured: false },
+  { id: 80, name: 'Loaded Oreo Cheesecake', image: '/images/products-category-images/oreo-cheesecake-mud-slide-double-chocolate.webp', slug: 'loaded-oreo-cheesecake', description: 'Oreo cheesecake cookie.', category: 'Cookies', keywords: 'cookie, oreo, cheesecake', isFeatured: false },
+
+  // Macarons
+  { id: 81, name: 'Raspberry Macaron', image: '/images/products-category-images/raspberry-macaron.webp', slug: 'raspberry-macaron', description: 'Crisp shell with raspberry flavor.', category: 'Macarons', keywords: 'macaron, raspberry', isFeatured: false },
+  { id: 82, name: 'Lemon Macaron', image: '/images/products-category-images/lemon-macaron.webp', slug: 'lemon-macaron', description: 'Crisp shell with lemon flavor.', category: 'Macarons', keywords: 'macaron, lemon', isFeatured: false },
+  { id: 83, name: 'Caramel Macaron', image: '/images/products-category-images/caramel-macaron.webp', slug: 'caramel-macaron', description: 'Crisp shell with caramel flavor.', category: 'Macarons', keywords: 'macaron, caramel', isFeatured: false },
+  { id: 84, name: 'Chocolate Macaron', image: '/images/products-category-images/chocolate-macaron.webp', slug: 'chocolate-macaron', description: 'Crisp shell with chocolate flavor.', category: 'Macarons', keywords: 'macaron, chocolate', isFeatured: false },
+
+  // Cheesecakes
+  { id: 85, name: 'Fresh Raspberry Cheesecake', image: '/images/products-category-images/berries.webp', slug: 'fresh-raspberry-cheesecake', description: 'Classic raspberry cheesecake.', category: 'Cheesecakes', keywords: 'cheesecake, raspberry', isFeatured: false },
+  { id: 86, name: 'Mango Cheesecake', image: '/images/products-category-images/mango-cheesecake.webp', slug: 'mango-cheesecake', description: 'Tropical mango cheesecake.', category: 'Cheesecakes', keywords: 'cheesecake, mango', isFeatured: false },
+  { id: 87, name: 'Lemon Cheesecake', image: '/images/products-category-images/lemon-cheesecake.webp', slug: 'lemon-cheesecake', description: 'Tangy lemon cheesecake.', category: 'Cheesecakes', keywords: 'cheesecake, lemon', isFeatured: false },
+  { id: 88, name: 'Biscoff Cheesecake', image: '/images/products-category-images/biscoff-cheesecake.webp', slug: 'biscoff-cheesecake', description: 'Biscoff-flavored cheesecake.', category: 'Cheesecakes', keywords: 'cheesecake, biscoff', isFeatured: false },
+  { id: 89, name: 'Matcha Cheesecake', image: '/images/products-category-images/matcha-cheesecake.webp', slug: 'matcha-cheesecake', description: 'Green tea matcha cheesecake.', category: 'Cheesecakes', keywords: 'cheesecake, matcha, green tea', isFeatured: false },
+
+  // Cake Jars
+  { id: 90, name: 'Bunny in a Burrow', image: '/images/products-category-images/bunny-in-a-burrow-carrot-cake-cream-cheese-caramel-pecans.webp', slug: 'bunny-in-a-burrow', description: 'Carrot cake with caramel pecans.', category: 'Cake Jars', keywords: 'cake jar, carrot cake, caramel, pecans', isFeatured: false },
+  { id: 91, name: 'Dawn till Dusk', image: '/images/products-category-images/dawn-till-dusk-blueberry-and-vanilla.webp', slug: 'dawn-till-dusk', description: 'Vanilla cake with blueberry compote.', category: 'Cake Jars', keywords: 'cake jar, vanilla, blueberry', isFeatured: false },
+  { id: 92, name: 'I am Grut', image: '/images/products-category-images/i-am-grut.webp', slug: 'i-am-grut', description: 'Chocolate mousse cake jar.', category: 'Cake Jars', keywords: 'cake jar, chocolate mousse', isFeatured: false },
+  { id: 93, name: 'Northern Lights', image: '/images/products-category-images/funfetti.webp', slug: 'northern-lights', description: 'Funfetti cake jar.', category: 'Cake Jars', keywords: 'cake jar, funfetti', isFeatured: false },
+  { id: 94, name: 'Pie in a Jar', image: '/images/products-category-images/pie-in-a-jar-lemon-curd-jar.webp', slug: 'pie-in-a-jar', description: 'Lemon pie jar.', category: 'Cake Jars', keywords: 'cake jar, lemon pie', isFeatured: false },
+  { id: 95, name: 'Naughty Mango', image: '/images/products-category-images/naughty-mango.webp', slug: 'naughty-mango', description: 'Mango purée with whipped cream and almonds.', category: 'Cake Jars', keywords: 'cake jar, mango, whipped cream, almonds', isFeatured: false },
+
+  // Signature Delights
+  { id: 96, name: 'Sticky Buns', image: '/images/products-category-images/sticky-cinnamon-buns-topped-with-cream-cheese-drizzle-and-nuts.webp', slug: 'sticky-buns', description: 'Gooey cinnamon, fruit & nut loaded buns with cream cheese drizzle.', category: 'Sticky Buns', keywords: 'sticky buns, cinnamon, fruit, nut, cream cheese', isFeatured: false },
+  { id: 97, name: 'Seed Crackers', image: '/images/products-category-images/seed-crackers-gf-v.webp', slug: 'seed-crackers', description: 'Gluten-free, vegan seed crackers.', category: 'Crackers', keywords: 'crackers, seed, gluten-free, vegan', isFeatured: false },
+  { id: 98, name: 'Cheese and Nuts Cracker', image: '/images/products-category-images/cheese-and-nuts-cracker.webp', slug: 'cheese-and-nuts-cracker', description: 'Crackers with cheese and nuts.', category: 'Crackers', keywords: 'crackers, cheese, nuts', isFeatured: false },
+  { id: 99, name: 'Semiahmoo Trail Spiced Nuts', image: '/images/products-category-images/spiced-snackable-nuts.webp', slug: 'semiahmoo-trail-spiced-nuts', description: 'Perfect spiced nuts for snacking.', category: 'Snacks', keywords: 'snacks, spiced nuts', isFeatured: false },
+  { id: 100, name: 'Baked Mini Donuts', image: '/images/products-category-images/baked-mini-donuts-pack-of-6.webp', slug: 'baked-mini-donuts', description: 'Moist baked mini donuts, sold in packs of 6.', category: 'Mini Donuts', keywords: 'mini donuts, baked', isFeatured: false },
+
+  // Loaves
+  { id: 101, name: 'Banana Walnut Chocochip', image: '/images/products-category-images/banana-walnut-chocochip-v.webp', slug: 'banana-walnut-chocochip', description: 'Vegan banana walnut chocolate chip loaf.', category: 'Loaves', keywords: 'loaf, banana, walnut, chocolate chip, vegan', isFeatured: false },
+  { id: 102, name: 'Orange Cornmeal', image: '/images/products-category-images/orange-cornmeal-gf.webp', slug: 'orange-cornmeal', description: 'Gluten-free orange cornmeal loaf.', category: 'Loaves', keywords: 'loaf, orange, cornmeal, gluten-free', isFeatured: false },
+  { id: 103, name: 'Yummy Mummy – Eggless Date & Walnut Cake)', image: '/images/products-category-images/yummy-mummy-date-and-walnut-eggless.webp', slug: 'yummy-mummy', description: 'Eggless date & walnut loaf (mom’s recipe).', category: 'Loaves', keywords: 'loaf, date, walnut, eggless', isFeatured: false },
+  { id: 104, name: 'Lemon Cranberry', image: '/images/products-category-images/lemon-cranberry.webp', slug: 'lemon-cranberry', description: 'Lemon cranberry loaf.', category: 'Loaves', keywords: 'loaf, lemon, cranberry', isFeatured: false },
+  { id: 105, name: 'Classic Tiramisu', image: '/images/products-category-images/tiramisu-tres-leche-creamy-saffron-vanilla-pistachio-blend.webp', slug: 'classic-tiramisu', description: 'Traditional tiramisu loaf.', category: 'Loaves', keywords: 'loaf, tiramisu', isFeatured: false },
+  { id: 106, name: 'Tres Leche', image: '/images/products-category-images/tres-leche.webp', slug: 'tres-leche', description: 'Rich loaf infused with saffron, vanilla, and pistachios.', category: 'Loaves', keywords: 'loaf, tres leche, saffron, vanilla, pistachio', isFeatured: false },
+
+  // Dine-in Only
+  { id: 107, name: 'Glowball Warming: Choco Dome', image: '/images/products-category-images/glowball-warming-choco-dome-dome-of-chocolate-covering-cake-fruits-marshmallows-ice-cream.webp', slug: 'choco-dome', description: 'Chocolate dome with cake cubes, fruits, marshmallows, ice cream, and hot chocolate sauce.', category: 'Specials', keywords: 'dine-in, choco dome, chocolate, cake, marshmallow, ice cream', isFeatured: false },
+  { id: 108, name: 'Mr. Lava, Lava - Molten Lava Cake', image: '/images/products-category-images/mr.-lava-lava-molten-chocolate-cake-with-ice-cream-and-salted-caramel.webp', slug: 'mr-lava-lava', description: 'Molten lava cake topped with ice cream and salted caramel.', category: 'Specials', keywords: 'dine-in, lava cake, chocolate, ice cream, caramel', isFeatured: false },
+  { id: 109, name: 'Crayzee Croffle', image: '/images/products-category-images/crayzee-croffle-croissant-waffle-topped-with-cream-bananas-strawberries.webp', slug: 'crayzee-croffle', description: 'Croissant-waffle topped with whipped cream, bananas, and strawberries.', category: 'Specials', keywords: 'dine-in, croffle, croissant, waffle, cream, banana, strawberry', isFeatured: false },
+];
+
+// Helper functions with proper typing
+export function getAllProducts(): Product[] {
+  return productsData;
+}
+
+export function getProductBySlug(slug: string): Product | undefined {
+  return productsData.find(product => product.slug === slug);
+}
+
+export function getProductById(id: number): Product | undefined {
+  return productsData.find(product => product.id === id);
+}
+
+export function getProductsByCategory(category: string): Product[] {
+  return productsData.filter(product => 
+    product.category.toLowerCase() === category.toLowerCase()
+  );
+}
+
+export function searchProducts(query: string): Product[] {
+  const lowerQuery = query.toLowerCase();
+  return productsData.filter(product =>
+    product.name.toLowerCase().includes(lowerQuery) ||
+    product.description?.toLowerCase().includes(lowerQuery) ||
+    product.category.toLowerCase().includes(lowerQuery)
+  );
+}
+
+// export function getAllSlugs(): string[] {
+//   return productsData.map(product => product.slug);
+// }

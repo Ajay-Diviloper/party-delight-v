@@ -1,0 +1,17 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/blogs/route": "/api/blogs",
+  "/api/products/route": "/api/products",
+  "/favicon.ico/route": "/favicon.ico",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/about/page": "/about",
+  "/blog/[slug]/page": "/blog/[slug]",
+  "/blog/page": "/blog",
+  "/category/[slug]/page": "/category/[slug]",
+  "/category/page": "/category",
+  "/contact/page": "/contact",
+  "/products/[slug]/page": "/products/[slug]",
+  "/products/page": "/products",
+  "/page": "/"
+}
