@@ -112,6 +112,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/blog": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/blog",
+      "dataRoute": "/blog.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/category": {
       "experimentalBypassFor": [
         {
@@ -127,30 +151,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/category",
       "dataRoute": "/category.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/contact": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/contact",
-      "dataRoute": "/contact.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -208,7 +208,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/blog": {
+    "/contact": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -221,8 +221,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/blog",
-      "dataRoute": "/blog.rsc",
+      "srcRoute": "/contact",
+      "dataRoute": "/contact.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -236,8 +236,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "db7a49f95a3819b37e29809dbe49a333",
-    "previewModeSigningKey": "0bbc5ce5e3e52c4024f1da74a9a972e7fef2ace2528b1b050156d5fb53bfbce7",
-    "previewModeEncryptionKey": "695f320bdccc4518f19e23a3fba0f56d609ca9cd7c24704cdb47552d70fecee7"
+    "previewModeId": "805fb840149564481aa6953b0ce3b056",
+    "previewModeSigningKey": "b1a2da0125c816d21ac9078f79e2d99288f6f45ca22d277f65a8cbc790e00f12",
+    "previewModeEncryptionKey": "97926010b1cad34b479d394e8aeddd39b761e43e013d2d318ca6b1c6064f8cee"
   }
 }
