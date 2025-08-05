@@ -45,7 +45,7 @@ const InstagramSection = () => {
   }, []);
 
   return (
-    <div className="w-full bg-white py-38">
+    <div className="w-full bg-white py-20">
       <div className="container mx-auto">
         <div className="grid grid-cols-12 items-center">
           {/* Title/Info */}
@@ -96,7 +96,7 @@ const InstagramSection = () => {
                 <a
                   key={idx}
                   href="#"
-                  className="relative aspect-[4/3] min-w-[25%] max-w-[28%] flex-1 inline-block group rounded overflow-hidden"
+                  className="relative aspect-[4/3] min-w-[50%] md:min-w-[25%] max-w-[28%] flex-1 inline-block group rounded overflow-hidden"
                   tabIndex={0}
                   aria-label="View on Instagram"
                   style={{ height: 'auto' }}

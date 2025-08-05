@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence, easeInOut } from 'framer-motion';
 import Image from 'next/image';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
   {
@@ -42,10 +43,20 @@ const HomeSlider = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // const handleDotClick = (index: number) => {
-  //   setDirection(index > current ? 1 : -1);
-  //   setCurrent(index);
-  // };
+  const handleDotClick = (index: number) => {
+    setDirection(index > current ? 1 : -1);
+    setCurrent(index);
+  };
+
+  const handlePrevClick = () => {
+    setDirection(-1);
+    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
+  const handleNextClick = () => {
+    setDirection(1);
+    setCurrent((prev) => (prev + 1) % slides.length);
+  };
 
   const variants = {
     initialLoad: {
@@ -91,7 +102,7 @@ const HomeSlider = () => {
     alt={slides[current].alt}
     width={1920}
     height={600}
-    objectFit="cover"
+    objectFit="cover" // same as object-contain
     className='h-full' // same as object-contain
     priority
   />
@@ -119,33 +130,58 @@ const HomeSlider = () => {
         </motion.div>
       </AnimatePresence>
 
-      {/* Navigation Dots */}
-      {/* <div className="absolute bottom-3 sm:bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 sm:gap-3 z-[2]">
-        {slides.map((slide, index) => (
-          <div key={slide.id} className="group relative">
-            <button
-              className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full border-2 transition-all duration-300 ${
-                index === current ? 'bg-light-brown border-light-brown' : 'bg-transparent border-white'
-              }`}
-              onClick={() => handleDotClick(index)}
-            ></button>
-          <Image
-  src={slide.image}
-  alt="Preview"
-  width={48}
-  height={32}
-  className="  text-center
-    rounded-lg 
-    object-cover 
-    sm:w-16 sm:h-10 
-    w-12 h-8 
-    shadow-md
-  "
-/>
+      {/* Desktop Navigation Arrows */}
+      <div className="hidden md:flex absolute inset-x-0 top-1/2 transform -translate-y-1/2 justify-between items-center px-6 lg:px-12 z-20">
+        <button
+          onClick={handlePrevClick}
+          className="bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
+          aria-label="Previous slide"
+        >
+          <ChevronLeft className="w-6 h-6" />
+        </button>
+        
+        <button
+          onClick={handleNextClick}
+          className="bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm"
+          aria-label="Next slide"
+        >
+          <ChevronRight className="w-6 h-6" />
+        </button>
+      </div>
 
-          </div>
+      {/* Navigation Dots */}
+       < div className="absolute bottom-3 sm:bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 sm:gap-3 z-[2]">
+        
+             {slides.map((slide, index) => (
+            <div key={slide.id} className="group relative">
+              <button
+                className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full border-2 transition-all duration-300 ${
+                  index === current ? 'bg-light-brown border-light-brown' : 'bg-transparent border-white'
+                }`}
+                onClick={() => handleDotClick(index)}
+              ></button>
+ 
+             
+ 
+           {/* <Image
+    src={slide.image}
+    alt="Preview"
+    width={48}
+    height={32}
+    className="  text-center
+      rounded-lg 
+      object-cover 
+      sm:w-16 sm:h-10 
+      w-12 h-8 
+      shadow-md
+    "
+  /> */}
+ </div>
+        
         ))}
-      </div> */}
+      </div> 
+
+
     </div>
   );
 };

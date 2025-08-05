@@ -30,9 +30,9 @@ const ParallaxSection = () => {
   // }, []);
 
   return (
-    <section className="relative w-full min-h-[600px] bg-contain bg-center bg-fixed bg-no-repeat" style={{ backgroundImage: "url('/images/cake.jpg')" }}>
+    <section className="relative w-full min-h-[600px] bg-contain bg-center md:bg-fixed  bg-no-repeat" style={{ backgroundImage: "url('/images/cake.jpg')" }}>
       {/* <div className="absolute inset-0 bg-black/30" /> */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/80 to-black/90 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70 z-0"></div>
 
       <div className="relative container mx-auto px-4 py-16 flex flex-col md:flex-row items-center">
         {/* Left Column */}

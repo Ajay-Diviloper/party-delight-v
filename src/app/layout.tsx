@@ -23,7 +23,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URl || 'http://localhost:3000'),
   title: {
-    default: 'Your Bakery - Fresh Products Daily',
+    default: 'Artisan bakery creations',
     template: '%s | Your Bakery',
   },
   description: 'Discover our fresh bakery products including breads, cakes, and muffins. Baked daily with premium ingredients.',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: process.env.NEXT_PUBLIC_BASE_URl,
-    title: 'Your Bakery - Fresh Products Daily',
+    title: 'Artisan bakery creations',
     description: 'Discover our fresh bakery products including breads, cakes, and muffins.',
     siteName: 'Your Bakery',
     images: [
