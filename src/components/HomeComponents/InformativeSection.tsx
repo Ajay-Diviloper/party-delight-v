@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 const InformativeSection = () => {
   return (
-    <section className="relative w-full h-[90vh] flex items-center justify-center overflow-hidden">
+    <section className="relative w-full h-[80vh] md:h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/images/bg6.jpg"
+        src="/images/slider/innerview.jpg"
         alt="Cakes Background"
         fill
         className="object-cover z-0"
@@ -31,8 +31,8 @@ const InformativeSection = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="absolute bottom-0 left-0 w-full bg-[#212121ad]/60 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-24 py-4 z-[3] gap-4 md:gap-0">
-        <div className="flex items-center gap-2 text-lg">
+      <div className="absolute bottom-0 left-0 w-full bg-[#212121ad]/60 flex flex-col md:flex-row justify-center md:justify-between px-4 md:px-24 py-4 z-[3] gap-4 md:gap-0">
+        <div className="flex  text-left items-center gap-2 text-lg">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6" style={{ color: '#ff3131' }}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0-1.243 1.007-2.25 2.25-2.25h15a2.25 2.25 0 0 1 2.25 2.25v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75zm0 0l9.75 6.75 9.75-6.75" /></svg>
           <span className="text-white font-sans">Contact us</span>
         </div>

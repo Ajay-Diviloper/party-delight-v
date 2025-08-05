@@ -76,6 +76,12 @@ p{
   color: #858585;
 }
 
+@media(max-width: 768px){
+  .main-btn {
+    padding: 10px 20px !important;
+  }
+}
+
 .main-btn {
   font-weight: 600;
   text-transform: uppercase;

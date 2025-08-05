@@ -49,9 +49,9 @@ const InstagramSection = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-12 items-center">
           {/* Title/Info */}
-          <div className="col-span-12 md:col-span-4 flex flex-col gap-5 items-center md:items-start justify-center px-8 mb-8 md:mb-0">
+          <div className="col-span-12 md:col-span-4 flex flex-col gap-5  md:items-start justify-center px-8 mb-8 md:mb-0">
       <h2 className="text-4xl md:text-5xl font-heading mb-2 tracking-wide">INSTAGRAM</h2>
-      <span className="text-xs text-[#ff3131] mb-1">Follow us on Instagram</span>
+      <span className="text-sm md:text-base text-[#ff3131] mb-1 text-left">Follow us on Instagram</span>
 
       {/* Link Wrapper */}
       <Link

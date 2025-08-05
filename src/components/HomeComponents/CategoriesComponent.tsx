@@ -83,12 +83,12 @@ const CategoriesComponent = () => {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-lg md:text-xl font-heading font-medium text-gray-900 mb-3 line-clamp-2 group-hover:text-primary-red transition-colors duration-300">
+                <h3 className="text-lg text-center md:text-left md:text-xl font-heading font-medium text-gray-900 mb-3 line-clamp-2 group-hover:text-primary-red transition-colors duration-300">
                   {cat.title}
                 </h3>
                 
                 {/* Shop Now Button */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center md:justify-between justify-center ">
                   <span className="text-sm font-medium text-gray-600 group-hover:text-primary-red transition-colors duration-300">
                     Shop Now
                   </span>
@@ -115,7 +115,7 @@ const CategoriesComponent = () => {
         <div className="text-center mt-12">
           <Link 
             href="/products"
-            className="inline-flex items-center px-8 py-3 bg-primary-[#ff3131] md:bg-[#ff3131] text-white font-medium rounded-lg  transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            className="inline-flex items-center px-8 py-3 bg-[#ff3131] md:bg-[#ff3131] text-white font-medium rounded-lg  transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
             View All Categories
             <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
