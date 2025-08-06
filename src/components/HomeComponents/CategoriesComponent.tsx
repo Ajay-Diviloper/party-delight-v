@@ -35,7 +35,7 @@ const categories = [
   },
   {
     title: 'Sandwiches',
-    img: '/images/products-category-images/salmon-sandwich.webp',
+    img: '/images/products-category-images/vegetarian-sandwich.webp',
     number: '06.',
     link: '/products',
   },
