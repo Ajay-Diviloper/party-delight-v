@@ -9,7 +9,7 @@ import ParallaxSection from "@/components/HomeComponents/ParallaxSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Your Bakery - Fresh Products Daily',
+  title: 'Celebrate Every Occasion Deliciously',
   description: 'Welcome to Your Bakery! We offer fresh, delicious bakery products including breads, cakes, and muffins baked daily.',
 };
 

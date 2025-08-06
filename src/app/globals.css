@@ -72,9 +72,9 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
-p{
+/* p{
   color: #858585;
-}
+} */
 
 @media(max-width: 768px){
   .main-btn {

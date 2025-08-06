@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence, easeInOut } from 'framer-motion';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Link from 'next/link';
 
 const slides = [
   {
@@ -123,9 +124,14 @@ const HomeSlider = () => {
                 {slides[current].subtitle}
               </div>
             )}
-            <button className="main-btn font-sans md:px-4 px-2 md:py-2 py-1 text-sm sm:text-base transition-colors !hover:bg-[#ff3131] bg-[#fff] hover:text-white">
-              Shop Now
-            </button>
+
+            
+<Link
+  href="/products"
+  className="main-btn font-sans md:px-4 px-2 md:py-2 py-1 text-sm sm:text-base transition-colors !hover:bg-[#ff3131] bg-[#fff] hover:text-white inline-block text-center"
+>
+  Shop Now
+</Link>
           </div>
         </motion.div>
       </AnimatePresence>

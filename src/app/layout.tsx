@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URl || 'http://localhost:3000'),
   title: {
     default: 'Artisan bakery creations',
-    template: '%s | Your Bakery',
+    template: '%s | Artisan bakery creations',
   },
   description: 'Discover our fresh bakery products including breads, cakes, and muffins. Baked daily with premium ingredients.',
   keywords: ['bakery', 'fresh bread', 'cakes', 'muffins', 'Italian products'],
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
         url: '/images/og-default.jpg',
         width: 1200,
         height: 630,
-        alt: 'Your Bakery',
+        alt: '',
       },
     ],
   },
@@ -87,7 +87,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "Your Bakery",
+              "name": "Artisan bakery creations",
               "url": process.env.NEXT_PUBLIC_BASE_URl,
               "description": "Fresh bakery products including breads, cakes, and muffins.",
               // "potentialAction": {

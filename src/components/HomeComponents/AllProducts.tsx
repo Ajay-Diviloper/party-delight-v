@@ -84,9 +84,22 @@ const AllProducts = () => {
       {/* View More Products button */}
       {filteredProducts.length > 8 && !showAll && (
         <div className="flex justify-center mt-8 sm:mt-10">
-          <button
-    className="inline-flex items-center px-8 py-3 bg-primary-[#ff3131] md:bg-[#ff3131] text-white font-medium rounded-lg  transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"            onClick={() => setShowAll(true)}
+
+
+{/* <Link 
+            href="/products"
+            className="inline-flex items-center px-8 py-3 bg-[#ff3131] md:bg-[#ff3131] text-white font-medium rounded-lg  transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
+            View All Categories
+            <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link> */}
+
+
+          <button
+            className="inline-flex items-center px-8 py-3 bg-[#ff3131] md:bg-[#ff3131] text-white font-medium rounded-lg  transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
             View More Products
             <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
