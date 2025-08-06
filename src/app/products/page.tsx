@@ -31,6 +31,17 @@ const ProductsPage = () => {
     fetchProducts();
   }, []);
 
+  // Initialize all categories as expanded when products are loaded
+  useEffect(() => {
+    if (products.length > 0) {
+      const initialExpandedState: { [key: string]: boolean } = {};
+      categoriesWithProducts.forEach(category => {
+        initialExpandedState[category.name] = true;
+      });
+      setExpandedCategories(initialExpandedState);
+    }
+  }, [categoriesWithProducts, products.length]);
+
   // Filter products by search
   const filteredProducts = useMemo(() => {
     let filtered = products;
@@ -243,15 +254,15 @@ const ProductsPage = () => {
                   >
                     <div className="flex items-center gap-3">
                     <h2 className="text-xl font-bold text-gray-900">
-                        {category.name}
-                      </h2>
-                      {/* <div className="w-8 h-8 bg-[#ff3131] hover:bg-[#ff3131]/70 text-white rounded-full flex items-center justify-center transition-colors">
-                        {isExpanded ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
-                      </div> */}
-                    
-                    </div>
+                      {category.name}
+                    </h2>
+                    {/* <div className="w-8 h-8 bg-[#ff3131] hover:bg-[#ff3131]/70 text-white rounded-full flex items-center justify-center transition-colors">
+                      {isExpanded ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
+                    </div> */}
+                   
+                  </div>
 
-                    <div className="w-8 h-8 bg-gray-300 hover:bg-[#ff3131] text-white rounded-full flex items-center justify-center transition-colors">
+                  <div className="w-8 h-8 bg-gray-300 hover:bg-[#ff3131] text-white rounded-full flex items-center justify-center transition-colors">
   <ChevronUp
     className={`w-4 h-4 transform transition-transform duration-300 text-black  ${
       isExpanded ? 'rotate-180' : 'rotate-0'
