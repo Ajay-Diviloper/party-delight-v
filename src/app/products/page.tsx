@@ -132,17 +132,17 @@ const ProductsPage = () => {
       </div> */}
 
       {/* Main Header */}
-      <div className="bg-white border-b border-gray-200 py-4 w-[90%] mx-auto">
-        <div className="container mx-auto flex items-center justify-between px-4">
-          <h1 className="font-heading text-2xl font-bold text-gray-900">Party Delight</h1>
-          <div className="flex items-center border border-gray-300 rounded-lg px-3 py-2 bg-gray-50">
+      <div className="bg-white border-b border-gray-200 py-4 w-full md:w-[90%] mx-auto">
+        <div className="container mx-auto flex gap-3 flex-col md:flex-row items-center md:justify-between justify-center px-4">
+          <h1 className="font-heading text-xl md:text-2xl font-bold text-gray-900">Party Delight</h1>
+          <div className="flex items-center border border-gray-300 rounded-lg px-3 py-2 bg-gray-50 w-full md:w-auto">
             {/* <Search className="w-4 h-4 text-gray-500 mr-2" /> */}
             <input
               type="text"
               placeholder="Search menu..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="bg-transparent outline-none text-sm w-64"
+              className="bg-transparent outline-none text-sm w-full md:w-64"
             />
           </div>
         </div>
@@ -234,7 +234,7 @@ const ProductsPage = () => {
       )} */}
 
       {/* Main Content */}
-      <div className=" w-[90%]  container mx-auto px-4 py-6">
+      <div className="w-full md:w-[90%] container mx-auto px-4 py-4 md:py-6">
         {loading ? (
           <div className="text-center text-lg font-sans py-8">Loading...</div>
         ) : (
@@ -250,78 +250,75 @@ const ProductsPage = () => {
                   {/* Category Header with Toggle Button */}
                   <button
                     onClick={() => toggleCategory(category.name)}
-                    className="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition-colors"
+                    className="w-full flex items-center justify-between p-4 md:p-4 bg-white hover:bg-gray-50 transition-colors"
                   >
                     <div className="flex items-center gap-3">
-                    <h2 className="text-xl font-bold text-gray-900">
-                      {category.name}
-                    </h2>
-                    {/* <div className="w-8 h-8 bg-[#ff3131] hover:bg-[#ff3131]/70 text-white rounded-full flex items-center justify-center transition-colors">
-                      {isExpanded ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
-                    </div> */}
-                   
-                  </div>
+                      <h2 className="text-lg md:text-xl font-bold text-gray-900">
+                        {category.name}
+                      </h2>
+                    </div>
 
-                  <div className="w-8 h-8 bg-gray-300 hover:bg-[#ff3131] text-white rounded-full flex items-center justify-center transition-colors">
-  <ChevronUp
-    className={`w-4 h-4 transform transition-transform duration-300 text-black  ${
-      isExpanded ? 'rotate-180' : 'rotate-0'
-    }`}
-  />
-</div>
-                    {/* <span className="text-sm text-gray-500">
-                      {categoryProducts.length} items
-                    </span> */}
+                    <div className="w-8 h-8 bg-gray-300 hover:bg-[#ff3131] text-white rounded-full flex items-center justify-center transition-colors">
+                      <ChevronUp
+                        className={`w-4 h-4 transform transition-transform duration-300 text-black ${
+                          isExpanded ? 'rotate-180' : 'rotate-0'
+                        }`}
+                      />
+                    </div>
                   </button>
 
                   {/* Category Content - Collapsible */}
                   {isExpanded && (
-                    <div className=" mx-auto border-t border-gray-200 bg-gray-50 p-4">
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        {categoryProducts.map((product) => (
-              <div key={product.id} className="flex justify-between gap-4 p-4 bg-white rounded border border-gray-300 hover:shadow-md transition-shadow">
-              {/* Left Side: Text Content */}
-              <div className="flex flex-col justify-between">
-                <div> 
-                <h3 className="font-semibold text-gray-900 text-base mb-1">
-                  {product.name}
-                </h3>
-            
-                {product.description && (
-                  <p className="text-sm text-gray-600 my-3">
-                    {product.description}
-                  </p>
-                )}
-
-</div>
-            
-                <Link
-                  href="/contact"
-                  className=" capitalize text-sm font-medium text-gray-900 hover:underline hover:text-[#ff3131] "
-                >
-                  Contact for pricing
-                </Link>
-              </div>
-            
-              {/* Right Side: Image + Plus Button Below */}
-              <div className="flex flex-col justify-between items-center gap-2">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  width={80}
-                  height={80}
-                  className="w-20 h-20 object-cover rounded-md"
-                />
-            
-                <button
-                  onClick={() => openProductModal(product)}
-                  className="w-8 h-8 bg-[#ff3131] hover:bg-[#ff3131]/80 text-white rounded-full flex items-center justify-center transition-colors"
-                >
-                  <Plus className="w-4 h-4" />
-                </button>
-              </div>
-            </div>
-                        ))}
+                                         <div className="mx-auto border-t border-gray-200 bg-gray-50 md:p-4 p-2" >
+                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                                 {categoryProducts.map((product) => (
+                           <div key={product.id} className="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow overflow-hidden">
+                             {/* Horizontal layout like the screenshot */}
+                             <div className="flex items-start justify-between p-4 gap-4">
+                               {/* Left Side: Text Content */}
+                               <div className="flex flex-col justify-between flex-1 min-h-0">
+                                 <div className="mb-3"> 
+                                   <h3 className="font-semibold text-gray-900 md:text-lg text-[16px] mb-2 leading-tight">
+                                     {product.name}
+                                   </h3>
+                                 
+                                   {product.description && (
+                                     <p className="text-sm text-gray-600 leading-relaxed line-clamp-2">
+                                       {product.description}
+                                     </p>
+                                   )}
+                                 </div>
+                                 
+                                 <Link
+                                   href="/contact"
+                                   className="inline-block text-sm font-medium text-gray-900 hover:underline hover:text-[#ff3131] transition-colors mt-auto"
+                                 >
+                                   Contact for pricing
+                                 </Link>
+                               </div>
+                             
+                               {/* Right Side: Image + Plus Button */}
+                               <div className="flex flex-col items-center gap-3 flex-shrink-0">
+                                 <div className="relative">
+                                   <Image
+                                     src={product.image}
+                                     alt={product.name}
+                                     width={100}
+                                     height={100}
+                                     className="w-20 h-20 object-cover rounded-lg shadow-sm"
+                                   />
+                                 </div>
+                             
+                                 <button
+                                   onClick={() => openProductModal(product)}
+                                   className="w-8 h-8 bg-[#ff3131] hover:bg-[#ff3131]/80 text-white rounded-full flex items-center justify-center transition-colors shadow-md"
+                                 >
+                                   <Plus className="w-4 h-4" />
+                                 </button>
+                               </div>
+                             </div>
+                           </div>
+                         ))}
                       </div>
                     </div>
                   )}
