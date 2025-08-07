@@ -258,13 +258,14 @@ const ProductsPage = () => {
                       </h2>
                     </div>
 
-                    <div className="w-8 h-8 bg-gray-300 hover:bg-[#ff3131] text-white rounded-full flex items-center justify-center transition-colors">
-                      <ChevronUp
-                        className={`w-4 h-4 transform transition-transform duration-300 text-black ${
-                          isExpanded ? 'rotate-180' : 'rotate-0'
-                        }`}
-                      />
-                    </div>
+                    <div className="w-8 h-8 bg-gray-300 hover:bg-[#ff3131] text-white rounded-full flex items-center justify-center transition-colors group">
+  <ChevronUp
+    className={`w-4 h-4 transform transition-transform duration-300 text-black group-hover:text-white ${
+      isExpanded ? 'rotate-180' : 'rotate-0'
+    }`}
+  />
+</div>
+
                   </button>
 
                   {/* Category Content - Collapsible */}
