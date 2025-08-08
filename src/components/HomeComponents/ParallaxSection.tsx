@@ -1,9 +1,73 @@
+/*
+USAGE EXAMPLES FOR PARALLAX SECTION WITH PROPS:
+
+1. Basic Usage (with default props):
+<ParallaxSection />
+
+2. Custom Text and Color:
+<ParallaxSection 
+  circleText="• Party Delight • Party Delight • Party Delight • Party Delight"
+  circleColor="#ff3131"
+/>
+
+3. Custom Styling:
+<ParallaxSection 
+  circleText="• Fresh Cakes • Fresh Cakes • Fresh Cakes • Fresh Cakes"
+  circleColor="#8B4513"
+  circleFontSize={16}
+  circleAnimationDuration={20}
+/>
+
+4. For Products Page:
+<ParallaxSection 
+  circleText="• Browse Products • Browse Products • Browse Products • Browse Products"
+  circleColor="#ff3131"
+  circleFontSize={13}
+  circleAnimationDuration={18}
+/>
+
+5. For Contact Page:
+<ParallaxSection 
+  circleText="• Get In Touch • Get In Touch • Get In Touch • Get In Touch"
+  circleColor="#fff"
+  circleFontSize={15}
+  circleAnimationDuration={16}
+/>
+
+6. For About Page:
+<ParallaxSection 
+  circleText="• Our Story • Our Story • Our Story • Our Story"
+  circleColor="#ff3131"
+  circleFontSize={14}
+  circleAnimationDuration={17}
+/>
+
+7. For Blog Page:
+<ParallaxSection 
+  circleText="• Latest News • Latest News • Latest News • Latest News"
+  circleColor="#8B4513"
+  circleFontSize={13}
+  circleAnimationDuration={19}
+/>
+*/
+
 "use client";
 
 import RotatingTextCircle from "../Circle/Page";
 
+interface ParallaxSectionProps {
+  circleText?: string;
+  circleColor?: string;
+  circleFontSize?: number;
+  circleAnimationDuration?: number;
+}
 
-const ParallaxSection = () => {
+const ParallaxSection = ({
+  circleText = "• Explore our cakes • Explore our cakes • Explore our cakes • Explore our cakes",
+  circleColor = "#fff",
+  circleFontSize = 13,
+  circleAnimationDuration = 15
+}: ParallaxSectionProps = {}) => {
   // For animating the startOffset of the textPath
  // const [offset, setOffset] = useState(0);
  // const requestRef = useRef<number | undefined>(0);
@@ -37,7 +101,7 @@ const ParallaxSection = () => {
     md:bg-[url('/images/cake.jpg')] bg-gradient-to-t from-black/90 via-black/90 to-black]
   "
 >      {/* <div className="absolute inset-0 bg-black/30" /> */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70 z-0"></div>
+<div className="absolute inset-0 bg-black/75" />
 
       <div className="relative container mx-auto px-4 py-16 flex flex-col md:flex-row items-center">
         {/* Left Column */}
@@ -101,7 +165,13 @@ const ParallaxSection = () => {
               →
             </div>
           </div> */}
-          <RotatingTextCircle/>
+                                           <RotatingTextCircle 
+              text={circleText}
+              fillColor={circleColor}
+              fontSize={circleFontSize}
+              animationDuration={circleAnimationDuration}
+              centerIcon="→"
+            />
         </div>
       </div>
     </section>

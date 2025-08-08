@@ -12,21 +12,21 @@ const testimonials = [
 		name: 'Emily R.',
 		location: 'London',
 		image: '/images/team-1.jpg',
-		color: '#b48a6e',
+		color: '#ff3131',
 	},
 	{
 		text: "The pastries were fresh, flavorful, and beautifully presented. I highly recommend Party Delight for any special occasion.",
 		name: 'Michael S.',
 		location: 'Toronto',
 		image: '/images/team-2.jpg',
-		color: '#b48a6e',
+		color: '#ff3131',
 	},
 	{
 		text: "Exceptional service and delicious treats! The team made my birthday unforgettable with their attention to detail.",
-		name: 'Priya K.',
+		name: 'Sam K.',
 		location: 'Sydney',
 		image: '/images/team-3.jpg',
-		color: '#b48a6e',
+		color: '#ff3131',
 	},
 ];
 
@@ -53,7 +53,7 @@ const sliderSettings = {
 
 const OurTestimonials = () => {
 	return (
-		<section className="w-full bg-[#fafafa] py-32">
+		<section className="w-full bg-[#fafafa] pb-16 ">
 			<div className="max-w-7xl mx-auto px-4">
 				<h2 className="text-4xl md:text-4xl font-heading pb-5 text-center mb-16">
 					CUSTOMER REVIEWS

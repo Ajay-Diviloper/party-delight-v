@@ -42,7 +42,7 @@ export default function Header() {
     { href: '/', label: 'Home', current: pathname === '/', noArrow: true },
     {
       href: '/products',
-      label: 'Savoury Selection',
+      label: 'Menu',
       current: pathname.startsWith('/products'),
       subItems: categories, // Use categories directly
     },
@@ -70,17 +70,30 @@ export default function Header() {
             </div>
           </div>
           <div className="flex gap-3">
-            <a href="https://www.facebook.com/partydelightsca/" target="_blank" rel="noopener noreferrer">
-              <Facebook className="w-5 h-5 text-white hover:text-[#ff3131] transition-colors duration-200" />
-            </a>
-            <a href="https://www.instagram.com/partydelightsca/?hl=en" target="_blank" rel="noopener noreferrer">
-              <Instagram className="w-5 h-5 text-white hover:text-[#ff3131] transition-colors duration-200" />
-            </a>
-          </div>
+  <a
+    href="https://www.facebook.com/partydelightsca/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-1.5 rounded-full transition-all duration-300 bg-transparent hover:bg-white group"
+  >
+    <Facebook className="w-5 h-5 text-white group-hover:text-[#ff3131] transition-colors duration-300" />
+  </a>
+  
+  <a
+    href="https://www.instagram.com/partydelightsca/?hl=en"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-1.5   rounded-full transition-all duration-300 bg-transparent hover:bg-white group"
+  >
+    <Instagram className="w-5 h-5 text-white group-hover:text-[#ff3131] transition-colors duration-300" />
+  </a>
+</div>
+
         </div>
       </div>
       
-      <header className="w-full bg-white/90 shadow-md sticky top-0 z-50">
+      <header className="w-full bg-white/30 backdrop-blur-md shadow-md sticky top-0 z-50">
+
         {/* Main header */}
         <div className="container mx-auto px-4 py-1 flex items-center justify-between">
           {/* Mobile menu button */}
@@ -96,7 +109,7 @@ export default function Header() {
           <div className="flex-1 lg:flex-none lg:w-auto flex justify-center lg:justify-start">
             <Link href="/" className="flex items-center">
               <Image
-                src="/images/party-delight-logo-v2.png"
+                src="/images/logo.png"
                 alt="Party Delight Logo"
                 width={150}
                 height={50}

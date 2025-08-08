@@ -21,7 +21,24 @@ export default function Home() {
 
       {/* <Partners /> */}
       <CategoriesComponent />
+      {/* Example 1: Default props */}
       <ParallaxSection />
+      
+      {/* Example 2: Custom props for different sections */}
+      {/* <ParallaxSection 
+        circleText="• Party Delight • Party Delight • Party Delight • Party Delight"
+        circleColor="#ff3131"
+        circleFontSize={16}
+        circleAnimationDuration={20}
+      /> */}
+      
+      {/* Example 3: Different text and styling */}
+      {/* <ParallaxSection 
+        circleText="• Fresh Cakes • Fresh Cakes • Fresh Cakes • Fresh Cakes"
+        circleColor="#8B4513"
+        circleFontSize={13}
+        circleAnimationDuration={18}
+      /> */}
       <AllProducts />
       <InformativeSection />
       <InstagramSection />

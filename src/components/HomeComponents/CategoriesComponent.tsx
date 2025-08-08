@@ -4,37 +4,37 @@ import Link from 'next/link';
 
 const categories = [
   {
-    title: 'BC Bliss – Berries & cream cheese',
+    title: 'Cakes',
     img: '/images/products-category-images/berries.webp',
     number: '01.',
     link: '/products',
   },
   {
-    title: 'Carrot Cake',
+    title: 'Cookies',
     img: '/images/products-category-images/carrot-cake.webp',
     number: '02.',
     link: '/products',
   },
   {
-    title: 'Peanut Butter Tart',
+    title: 'Scones',
     img: '/images/products-category-images/peanut-better.webp',
     number: '03.',
     link: '/products',
   },
   {
-    title: 'Choco Chunk',
+    title: 'Brownies',
     img: '/images/products-category-images/choco-cgank.webp',
     number: '04.',
     link: '/products',
   },
   {
-    title: 'Mango Sunshine',
+    title: '⁠Tarts',
     img: '/images/products-category-images/mango.webp',
     number: '05.',
     link: '/products',
   },
   {
-    title: 'Sandwiches',
+    title: '⁠Biscottis',
     img: '/images/products-category-images/vegetarian-sandwich.webp',
     number: '06.',
     link: '/products',
@@ -48,10 +48,10 @@ const CategoriesComponent = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-normal text-gray-900 mb-4">
-            Explore Our Categories
+          Explore Our World of Desserts
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover our handcrafted collection of premium cakes and desserts
+          <p className="text-lg text-gray-600  mx-auto">
+          Enjoy a curated collection of irresistible cakes, cookies, and seasonal specialties.
           </p>
         </div>
 
@@ -76,14 +76,14 @@ const CategoriesComponent = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                 
                 {/* Number Badge */}
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full w-8 h-8 flex items-center justify-center">
+                {/* <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full w-8 h-8 flex items-center justify-center">
                   <span className="text-sm font-bold text-gray-900">{cat.number}</span>
-                </div>
-              </div>
+                </div>*/}
+              </div> 
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-lg text-center md:text-left md:text-xl font-heading font-medium text-gray-900 mb-3 line-clamp-2 group-hover:text-primary-red transition-colors duration-300">
+                <h3 className="text-lg text-center md:text-left md:text-xl font-heading font-semibold text-[#ff3131] mb-3 line-clamp-2 group-hover:text-primary-red transition-colors duration-300">
                   {cat.title}
                 </h3>
                 
