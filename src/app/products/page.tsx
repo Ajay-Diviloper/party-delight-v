@@ -134,7 +134,7 @@ const ProductsPage = () => {
       {/* Main Header */}
       <div className="bg-white border-b border-gray-200 py-4 w-full md:w-[90%] mx-auto">
         <div className="container mx-auto flex gap-3 flex-col md:flex-row items-center md:justify-between justify-center px-4">
-          <h1 className="font-heading text-xl md:text-2xl font-bold text-gray-900">Party Delight</h1>
+          <h1 className="font-heading text-xl md:text-2xl font-bold text-[#ff3131]">Party Delight</h1>
           <div className="flex items-center border border-gray-300 rounded-lg px-3 py-2 bg-gray-50 w-full md:w-auto">
             {/* <Search className="w-4 h-4 text-gray-500 mr-2" /> */}
             <input
@@ -258,13 +258,14 @@ const ProductsPage = () => {
                       </h2>
                     </div>
 
-                    <div className="w-8 h-8 bg-gray-300 hover:bg-[#ff3131] text-white rounded-full flex items-center justify-center transition-colors">
-                      <ChevronUp
-                        className={`w-4 h-4 transform transition-transform duration-300 text-black ${
-                          isExpanded ? 'rotate-180' : 'rotate-0'
-                        }`}
-                      />
-                    </div>
+                    <div className="w-8 h-8 bg-gray-300 hover:bg-[#ff3131] text-white rounded-full flex items-center justify-center transition-colors group">
+  <ChevronUp
+    className={`w-4 h-4 transform transition-transform duration-300 text-black group-hover:text-white ${
+      isExpanded ? 'rotate-180' : 'rotate-0'
+    }`}
+  />
+</div>
+
                   </button>
 
                   {/* Category Content - Collapsible */}
