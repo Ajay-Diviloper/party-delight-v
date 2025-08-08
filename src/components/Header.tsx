@@ -42,7 +42,7 @@ export default function Header() {
     { href: '/', label: 'Home', current: pathname === '/', noArrow: true },
     {
       href: '/products',
-      label: 'Savoury Selection',
+      label: 'Menu',
       current: pathname.startsWith('/products'),
       subItems: categories, // Use categories directly
     },
@@ -96,7 +96,7 @@ export default function Header() {
           <div className="flex-1 lg:flex-none lg:w-auto flex justify-center lg:justify-start">
             <Link href="/" className="flex items-center">
               <Image
-                src="/images/party-delight-logo-v2.png"
+                src="/images/logo.png"
                 alt="Party Delight Logo"
                 width={150}
                 height={50}

@@ -18,7 +18,7 @@ const OurAboutUsTwo = () => {
         </div>
         {/* Right: Open Hours Content with extra padding and exact text */}
         <div className="flex flex-col items-start justify-center p-8 sm:p-12 md:pl-24 md:pr-20 md:py-20">
-          <span className="text-[#bc8157] text-sm sm:text-base md:text-lg mb-2 font-sans">Visit Us Anytime</span>
+          <span className="text-xl md:text-2xl lg:text-3xl font-heading mb-4 text-[#ff3131]">Visit Us Anytime</span>
           <h2 className="font-heading text-2xl sm:text-3xl md:text-5xl text-dark-brown mb-4 sm:mb-6 leading-tight">WE&apos;RE HERE FOR YOUR CELEBRATIONS</h2>
           <p className="text-grey text-sm sm:text-base md:text-lg font-sans mb-6 max-w-xl">
             Our doors are always open to sweeten your day. Whether it&apos;s a birthday, wedding, or just a craving, our team is ready to serve you with a smile and a slice of happiness.
