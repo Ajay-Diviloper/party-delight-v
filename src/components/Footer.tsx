@@ -65,7 +65,7 @@ export default function Footer() {
 
           <ul className="space-y-3 text-sm font-sans text-[#858585] mt-2.5">
             <li className="flex items-start gap-2">
-              <MapPin className="w-5 h-5 mt-0.5 text-[#ff3131]" />
+              <MapPin className="w-5 h-5 mt-0.6 text-[#ff3131]" />
               <span>6638 152A St #115, Surrey, BC V3S 5X5</span>
             </li>
             <li className="flex items-center gap-2">
